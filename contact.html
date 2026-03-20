@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+<header>
+  <div class="container header-flex">
+    <h1 class="logo">InputHere.</h1>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Work</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main class="contact-wrapper container">
+
+  <!-- LEFT SIDE -->
+  <div class="contact-info">
+    <h2>Contact</h2>
+
+    <p class="tagline">
+      you can paste your input here example Let’s create something timeless and meaningful together.
+    </p>
+
+    <div class="info-block">
+      <p><strong>Email</strong></p>
+      <p>yourEmail@example.com</p>
+    </div>
+
+    <div class="info-block">
+      <p><strong>Phone</strong></p>
+      <p>+91 12345 67890</p>
+    </div>
+
+    <div class="info-block">
+      <p><strong>Studio</strong></p>
+      <p>City, Country</p>
+    </div>
+  </div>
+
+  <!-- RIGHT SIDE FORM -->
+  <div class="contact-form-box">
+
+    <form id="contactForm" class="contact-form">
+
+      <div class="form-group">
+        <input type="text" id="name" required>
+        <label>Name</label>
+      </div>
+
+      <div class="form-group">
+        <input type="email" id="email" required>
+        <label>Email</label>
+      </div>
+
+      <div class="form-group">
+        <textarea id="message" rows="4" required></textarea>
+        <label>Message</label>
+      </div>
+
+      <button type="submit" class="btn-submit">Send Message</button>
+
+    </form>
+
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2025 admin</p>
+</footer>
+
+<script src="js/form.js"></script>
+
+</body>
+</html>

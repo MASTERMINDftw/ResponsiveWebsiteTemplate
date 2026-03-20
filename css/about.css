@@ -1,0 +1,13 @@
+.about {
+  margin-top: 100px;
+}
+
+.about h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+}
+
+.about p {
+  margin-top: 20px;
+  max-width: 600px;
+}

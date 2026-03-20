@@ -1,0 +1,143 @@
+.contact-container {
+  max-width: 600px;
+  margin: 120px auto;
+  text-align: center;
+}
+
+/* HEADER TEXT */
+.contact-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.contact-header p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* FORM */
+.contact-form {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* INPUT STYLE */
+.form-group {
+  position: relative;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  padding: 10px 5px;
+  font-size: 14px;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+}
+
+/* LABEL (floating effect) */
+.form-group label {
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  font-size: 13px;
+  color: #999;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+/* FLOAT LABEL */
+.form-group input:focus + label,
+.form-group input:valid + label,
+.form-group textarea:focus + label,
+.form-group textarea:valid + label {
+  top: -12px;
+  font-size: 11px;
+  color: #000;
+}
+
+/* FOCUS LINE */
+.form-group input:focus,
+.form-group textarea:focus {
+  border-bottom: 1px solid #000;
+}
+
+/* BUTTON */
+.btn-submit {
+  margin-top: 20px;
+  padding: 12px;
+  border: 1px solid #000;
+  background: transparent;
+  color: #000;
+  font-size: 13px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-submit:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contact-header h2 {
+    font-size: 36px;
+  }
+}
+
+/* LAYOUT */
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin: 120px auto;
+}
+
+/* LEFT SIDE */
+.contact-info h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+}
+
+.tagline {
+  margin: 20px 0 40px;
+  color: #555;
+  max-width: 300px;
+}
+
+.info-block {
+  margin-bottom: 30px;
+}
+
+.info-block p:first-child {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.info-block p:last-child {
+  font-size: 16px;
+}
+
+/* RIGHT SIDE */
+.contact-form-box {
+  width: 100%;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
