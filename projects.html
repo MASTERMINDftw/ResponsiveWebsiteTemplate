@@ -1,40 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Projects</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects page for a reusable responsive static website template.">
+  <title>Projects | InputHere.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/projects.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-flex">
+      <a href="index.html" class="logo">InputHere.</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
 
-<header>
-  <div class="container header-flex">
-    <h1 class="logo">InputHere.</h1>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html" class="active">Work</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-</header>
+  <main class="container projects-page">
+    <section class="page-intro">
+      <p class="eyebrow">Sample Project Layout</p>
+      <h1>Show your best work with short, scannable case studies.</h1>
+      <p>These cards are placeholders you can replace with real projects, services, featured articles, or product highlights.</p>
+    </section>
 
-<main class="container">
+    <section class="project-grid">
+      <article class="project-card">
+        <span class="project-tag">Brand Site</span>
+        <h2>Studio Landing Page Refresh</h2>
+        <p>Use this format to describe the project goal, your role, and the outcome in two or three concise lines.</p>
+        <ul>
+          <li>Custom homepage structure</li>
+          <li>Responsive section design</li>
+          <li>Lightweight static deployment</li>
+        </ul>
+      </article>
 
-<div class="project-grid">
-  <img src="images/img1.jpg">
-  <img src="images/img2.jpg">
-  <img src="images/img3.jpg">
-</div>
+      <article class="project-card">
+        <span class="project-tag">Portfolio</span>
+        <h2>Creator Showcase Website</h2>
+        <p>Ideal for freelancers, photographers, writers, and designers who want to highlight selected work with supporting context.</p>
+        <ul>
+          <li>Featured project blocks</li>
+          <li>About and contact pages</li>
+          <li>Simple navigation flow</li>
+        </ul>
+      </article>
 
-</main>
+      <article class="project-card">
+        <span class="project-tag">Small Business</span>
+        <h2>Service-Based Company Site</h2>
+        <p>A strong starting point for businesses that need service descriptions, trust-building copy, and easy contact options.</p>
+        <ul>
+          <li>Readable mobile layout</li>
+          <li>Space for testimonials</li>
+          <li>Editable content sections</li>
+        </ul>
+      </article>
+    </section>
+  </main>
 
-<footer>
-  <p>© 2025 admin</p>
-</footer>
-
+  <footer>
+    <div class="container footer-inner">
+      <p>&copy; 2026 admin</p>
+      <p>Reusable cards for projects, case studies, or featured work.</p>
+    </div>
+  </footer>
 </body>
 </html>

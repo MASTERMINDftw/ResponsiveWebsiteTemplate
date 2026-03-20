@@ -1,86 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Contact</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact page for a reusable responsive static website template.">
+  <title>Contact | InputHere.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
-
-<header>
-  <div class="container header-flex">
-    <h1 class="logo">InputHere.</h1>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Work</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
-    </ul>
-  </div>
-</header>
-
-<main class="contact-wrapper container">
-
-  <!-- LEFT SIDE -->
-  <div class="contact-info">
-    <h2>Contact</h2>
-
-    <p class="tagline">
-      you can paste your input here example Let’s create something timeless and meaningful together.
-    </p>
-
-    <div class="info-block">
-      <p><strong>Email</strong></p>
-      <p>yourEmail@example.com</p>
+  <header class="site-header">
+    <div class="container header-flex">
+      <a href="index.html" class="logo">InputHere.</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
     </div>
+  </header>
 
-    <div class="info-block">
-      <p><strong>Phone</strong></p>
-      <p>+91 12345 67890</p>
+  <main>
+    <section class="contact-hero section-band section-band-warm">
+      <div class="container contact-wrapper">
+        <section class="contact-info">
+          <p class="eyebrow">Contact</p>
+          <h1>Make it easy for visitors to get in touch.</h1>
+          <p class="tagline">
+            Use this page for project inquiries, collaboration requests, business questions, or a simple contact form connected to your preferred service.
+          </p>
+
+          <div class="contact-list">
+            <div class="info-block">
+              <p><strong>Email</strong></p>
+              <p>yourEmail@example.com</p>
+            </div>
+
+            <div class="info-block">
+              <p><strong>Phone</strong></p>
+              <p>+91 12345 67890</p>
+            </div>
+
+            <div class="info-block">
+              <p><strong>Location</strong></p>
+              <p>Remote-first, available worldwide</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact-form-box">
+          <div class="form-heading">
+            <p class="eyebrow">Inquiry Form</p>
+            <h2>Send a quick message</h2>
+          </div>
+
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder=" " required>
+              <label for="name">Name</label>
+            </div>
+
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder=" " required>
+              <label for="email">Email</label>
+            </div>
+
+            <div class="form-group">
+              <input type="text" id="subject" name="subject" placeholder=" " required>
+              <label for="subject">Project Type</label>
+            </div>
+
+            <div class="form-group">
+              <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+              <label for="message">Tell us about your goals</label>
+            </div>
+
+            <button type="submit" class="btn-submit">Send Message</button>
+            <p id="formStatus" class="form-status" aria-live="polite"></p>
+          </form>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>&copy; 2026 admin</p>
+      <p>Sample inquiry page for your static website.</p>
     </div>
+  </footer>
 
-    <div class="info-block">
-      <p><strong>Studio</strong></p>
-      <p>City, Country</p>
-    </div>
-  </div>
-
-  <!-- RIGHT SIDE FORM -->
-  <div class="contact-form-box">
-
-    <form id="contactForm" class="contact-form">
-
-      <div class="form-group">
-        <input type="text" id="name" required>
-        <label>Name</label>
-      </div>
-
-      <div class="form-group">
-        <input type="email" id="email" required>
-        <label>Email</label>
-      </div>
-
-      <div class="form-group">
-        <textarea id="message" rows="4" required></textarea>
-        <label>Message</label>
-      </div>
-
-      <button type="submit" class="btn-submit">Send Message</button>
-
-    </form>
-
-  </div>
-
-</main>
-
-<footer>
-  <p>© 2025 admin</p>
-</footer>
-
-<script src="js/form.js"></script>
-
+  <script src="js/form.js"></script>
 </body>
 </html>

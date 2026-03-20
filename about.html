@@ -1,39 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>About</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About page for a reusable responsive static website template.">
+  <title>About | InputHere.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-flex">
+      <a href="index.html" class="logo">InputHere.</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
 
-<header>
-  <div class="container header-flex">
-    <h1 class="logo">InputHere.</h1>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html" class="active">About</a></li>
-      <li><a href="projects.html">Work</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-</header>
+  <main class="container about-page">
+    <section class="page-intro">
+      <p class="eyebrow">About This Template</p>
+      <h1>A practical starting point for a modern static website.</h1>
+      <p>
+        This example positions the site as a small studio, but the structure works just as well for a freelancer, agency, coach, photographer, local business, or startup landing page.
+      </p>
+    </section>
 
-<main class="container">
+    <section class="about-layout">
+      <article class="about-card">
+        <h2>What this page should communicate</h2>
+        <p>
+          Your about page should help visitors trust you. It is a good place to share your background, your approach to work, and the values that shape your service or product.
+        </p>
+      </article>
+      <article class="about-card">
+        <h2>How to customize it</h2>
+        <p>
+          Replace this sample copy with your own story, credentials, business mission, milestones, testimonials, or a short timeline of your experience.
+        </p>
+      </article>
+    </section>
 
-<section class="about">
-  <h2>About</h2>
-  <p>We create bold, refined and inspiring spaces...</p>
-</section>
+    <section class="story-grid">
+      <article>
+        <p class="eyebrow">Positioning</p>
+        <h3>Clear, human messaging</h3>
+        <p>Explain who you help, what kind of work you do, and how your approach is different from generic competitors.</p>
+      </article>
+      <article>
+        <p class="eyebrow">Process</p>
+        <h3>Simple working steps</h3>
+        <p>Use this section to outline discovery, planning, delivery, and support so people know what it is like to work with you.</p>
+      </article>
+      <article>
+        <p class="eyebrow">Credibility</p>
+        <h3>Real proof points</h3>
+        <p>Add client names, years of experience, certifications, press mentions, or outcome-based highlights to build trust.</p>
+      </article>
+    </section>
+  </main>
 
-</main>
-
-<footer>
-  <p>© 2025 admin</p>
-</footer>
-
+  <footer>
+    <div class="container footer-inner">
+      <p>&copy; 2026 admin</p>
+      <p>Designed for fast static-site customization.</p>
+    </div>
+  </footer>
 </body>
 </html>
